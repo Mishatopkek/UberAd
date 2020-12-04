@@ -5,9 +5,11 @@ header{
     position: relative;
 }
 nav{
+    position: fixed;
     width: 1949px;
     height: 50px;
     background-color: #212121;
+    z-index: 2;
 }
 
 .menu{
@@ -31,6 +33,7 @@ nav{
 
 .subheader{
     position: absolute;
+    top: 50px;
     width: 100%;
     height: 84px;
     background-color: rgba(0,0,0, .6);
