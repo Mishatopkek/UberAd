@@ -1,3 +1,6 @@
+$mainColor: #1eacc7
+$secondColor: #222222
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -166,7 +169,7 @@ nav
       margin-right: 26px
       width: 113px
       height: 113px
-      background-color: #1eacc7
+      background-color: $mainColor
       border-radius: 100%
 
     .reasons_descr
@@ -174,7 +177,7 @@ nav
 
       .reasons_subtitle
         line-height: 21px
-        color: #1eacc7
+        color: $mainColor
         font-size: 17px
         font-weight: 400
 
@@ -184,6 +187,49 @@ nav
         font-weight: 300
         line-height: 21px
 
-
-
-
+.mobile
+  min-height: 864px
+  padding: 48px 0 80px 0
+  background: url("../img/mobile/bg.png") center (center / cover) no-repeat
+  .row
+    margin-top: 32px
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto 19px
+    padding-top: 92px
+    &_1
+      background: url("../img/mobile/1.png") center (center / cover) no-repeat
+    &_2
+      background: url("../img/mobile/2.png") center (center / cover) no-repeat
+    &_3
+      background: url("../img/mobile/3.png") center (center / cover) no-repeat
+    &_4
+      background: url("../img/mobile/4.png") center (center / cover) no-repeat
+    &_5
+      background: url("../img/mobile/5.png") center (center / cover) no-repeat
+    &_6
+      background: url("../img/mobile/6.png") center (center / cover) no-repeat
+    &_subtitle
+      color: #ffffff
+      font-size: 24px
+      font-weight: 400
+      line-height: 31px
+      text-align: center
+      text-transform: uppercase
+    &_plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translate(-50%)
+      width: 26px
+      height: 26px
+      background-color: #000000
+      margin: 0 auto
+      border-radius: 100%
+      padding: 6px
+      cursor: pointer
