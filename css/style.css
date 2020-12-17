@@ -251,4 +251,32 @@ nav {
   cursor: pointer;
 }
 
+.choice {
+  min-height: 896px;
+  padding: 57px 0 138px 0;
+  background: url("../img/choice/bg.jpg") center center/cover no-repeat;
+}
+.choice .label {
+  color: #000000;
+  background-color: #ffffff;
+}
+.choice .title {
+  color: #ffffff;
+}
+.choice .subtitle {
+  color: #ffffff;
+}
+.choice_car {
+  display: block;
+  margin: 56px auto;
+}
+.choice_descr {
+  margin: 0 auto;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
