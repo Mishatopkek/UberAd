@@ -283,7 +283,7 @@ nav {
 
 .choice {
   min-height: 896px;
-  padding: 57px 0 138px 0;
+  padding: 57px 0 105px 0;
   background: url("../img/choice/bg.jpg") center center/cover no-repeat;
 }
 .choice .label {
@@ -307,6 +307,48 @@ nav {
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+}
+
+.require {
+  padding: 68px 0 84px 0;
+}
+.require_block {
+  margin: 33px 0;
+}
+.require_title {
+  color: #1eacc7;
+  font-size: 22px;
+  font-weight: 400;
+}
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.require_list li:before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../img/require/check_blue.png") center center/cover no-repeat;
+}
+.require_descr {
+  color: #1eacc7;
+}
+.require .warning .require_title {
+  color: #ff5656;
+}
+.require .warning .require_list li:before {
+  background: url("../img/require/check_red.png") center center/cover no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

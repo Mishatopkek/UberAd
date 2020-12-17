@@ -261,7 +261,7 @@ nav
           background-color: $secondColor
 .choice
   min-height: 896px
-  padding: 57px 0 138px 0
+  padding: 57px 0 105px 0
   background: url("../img/choice/bg.jpg") center (center / cover) no-repeat
 
   .label
@@ -285,3 +285,39 @@ nav
     font-weight: 300
     line-height: 24px
     text-align: center
+
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+  &_title
+    color: $mainColor
+    font-size: 22px
+    font-weight: 400
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      position: relative
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 10px
+      &:before
+        content: ''
+        position: absolute
+        left: -32px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url('../img/require/check_blue.png') center (center / cover) no-repeat
+  &_descr
+    color: $mainColor
+  .warning
+    .require_title
+      color: $secondColor
+    .require_list
+      li
+        &:before
+          background: url('../img/require/check_red.png') center (center / cover) no-repeat
