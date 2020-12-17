@@ -1,6 +1,10 @@
 $mainColor: #1eacc7
-$secondColor: #222222
+$secondColor: #ff5656
 
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $mainColor
 *
   font-family: 'Roboto', sans-serif
 
@@ -21,12 +25,12 @@ nav
   margin: 0
   list-style-type: none
 
-  .menu_link
+  &_link
     color: #ffffff
     font-size: 15px
     font-weight: 300
 
-  .menu_item
+  &_item
     border-right: 2px dotted black
     padding-right: 28px
 
@@ -37,26 +41,26 @@ nav
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
 
-  .subheader_logo
+  &_logo
     display: block
     max-width: 100%
     margin-top: 16px
 
-  .subheader_official
+  &_official
     margin-top: 6px
     opacity: 0.5
     color: #ffffff
     font-size: 13px
     font-weight: 400
 
-  .subheader_call
+  &_call
     color: #ffffff
     font-size: 12px
     font-weight: 300
     margin-top: 19px
     text-align: right
 
-  .subheader_phone
+  &_phone
     display: block
     margin-top: 8px
     color: #ffffff
@@ -66,7 +70,7 @@ nav
     text-align: right
     line-height: 12px
 
-  .subheader_btn
+  &_btn
     margin-top: 19px
     width: 172px
     height: 46px
@@ -79,13 +83,14 @@ nav
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
+    +btn_hover
 
 .promo
   min-height: 800px
   background: url('../img/promo/bg.jpg') center (center / cover) no-repeat
   padding: 150px 0 135px 0
 
-  .promo_header
+  &_header
     color: #ffffff
     font-size: 60px
     font-weight: 700
@@ -93,7 +98,7 @@ nav
     line-height: 60px
     margin: 0
 
-  .promo_subheader
+  &_subheader
     color: #ffffff
     font-size: 36px
     font-weight: 700
@@ -102,7 +107,7 @@ nav
     margin: 22px 0 0
     text-align: center
 
-  .promo_descr
+  &_descr
     color: #ffffff
     font-size: 18px
     font-weight: 400
@@ -110,7 +115,7 @@ nav
     text-align: center
     margin-top: 23px
 
-  .promo_btn
+  &_btn
     display: block
     margin: 118px auto 0 auto
     width: 259px
@@ -123,6 +128,7 @@ nav
     font-size: 18px
     font-weight: 400
     text-transform: uppercase
+    +btn_hover
 
 .label
   margin: 0 auto
@@ -233,6 +239,26 @@ nav
       border-radius: 100%
       padding: 6px
       cursor: pointer
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $mainColor
+        transition: 0.3s all
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        display: block
+        height: 14px
+        width: 2px
+        background-color: $mainColor
+        transition: 0.3s all
+      &:hover
+        &:before, &:after
+          background-color: $secondColor
 .choice
   min-height: 896px
   padding: 57px 0 138px 0
