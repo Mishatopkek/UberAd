@@ -351,4 +351,35 @@ nav {
   background: url("../img/require/check_red.png") center center/cover no-repeat;
 }
 
+.world {
+  min-height: 717px;
+  padding: 49px 0;
+  position: relative;
+  background: url("../img/world/bg.jpg") center center/cover no-repeat;
+}
+.world .label {
+  color: #000000;
+  background-color: #ffffff;
+}
+.world .title {
+  color: #ffffff;
+}
+.world .subtitle {
+  color: #ffffff;
+}
+.world .label {
+  width: 76px;
+}
+.world a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 49px;
+  color: #1eacc7;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=style.css.map */

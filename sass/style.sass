@@ -5,6 +5,15 @@ $secondColor: #ff5656
   &:hover
     background-image: none
     background-color: $mainColor
+=white_labelAndTitle
+  .label
+    color: #000000
+    background-color: #ffffff
+  .title
+    color: #ffffff
+  .subtitle
+    color: #ffffff
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -263,16 +272,7 @@ nav
   min-height: 896px
   padding: 57px 0 105px 0
   background: url("../img/choice/bg.jpg") center (center / cover) no-repeat
-
-  .label
-    color: #000000
-    background-color: #ffffff
-
-  .title
-    color: #ffffff
-
-  .subtitle
-    color: #ffffff
+  +white_labelAndTitle
 
   &_car
     display: block
@@ -321,3 +321,22 @@ nav
       li
         &:before
           background: url('../img/require/check_red.png') center (center / cover) no-repeat
+
+.world
+  min-height: 717px
+  padding: 49px 0
+  position: relative
+  background: url('../img/world/bg.jpg') center (center / cover) no-repeat
+  +white_labelAndTitle
+  .label
+    width: 76px
+  a
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 49px
+    color: $mainColor
+    font-size: 15px
+    font-weight: 400
+    text-align: center
+    text-transform: uppercase
