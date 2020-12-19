@@ -343,78 +343,69 @@ nav
 
 footer
   padding: 14px 23px 39px 23px
+  a
+    &:hover
+      text-decoration: none
 .footer
-  position: relative
-  &_line
+  &_divider
     width: 299px
     height: 4px
-    background-color: $mainColor
+    background-color: #1fbad6
     margin: 0 auto
-    position: relative
-  &_menu
+  &_wrapper
     display: flex
-    justify-content: center
-    padding-top: 30px
-    padding-left: 0
-    margin: 0
-    list-style-type: none
-    &_link
-      color: #070716
-      font-size: 15px
-      font-weight: 300
-      text-align: left
-      text-transform: uppercase
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 32px
+  &_wrapper > div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+  &_social
+    width: 160px
+    display: flex
+    justify-content: space-between
     &_item
-      padding: 0 23px
-  &_submenu
-    display: flex
-    justify-content: center
-    padding-top: 15px
-    padding-left: 0
-    margin: 0
-    list-style-type: none
-    &_link
-      color: #999999
-      font-size: 11px
-      font-weight: 300
-      text-align: left
-      text-transform: uppercase
-    &_item
-      padding: 0 10px
-  &_language
-    color: $mainColor
-    font-size: 11px
-    position: absolute
-    left: 50%
-    transform: translateX(-50%)
-    font-weight: 400
-    line-height: 68px
-    text-align: center
-    text-transform: uppercase
-  &_links
-    display: flex
-    flex-direction: row
-    justify-content: flex-start
-    position: relative
-    bottom: 66px
-    &_round
       display: flex
       justify-content: center
       align-items: center
-      position: relative
-      margin-right: 9px
+      margin: 0 4px
       width: 32px
       height: 32px
       background-color: #070716
       border-radius: 100%
       i
         color: #fff
-  &_download
-    display: flex
-    flex-direction: row
-    justify-content: flex-end
-    position: relative
-    bottom: 98px
-    &_round
-      position: relative
-      margin-left: 6px
+  &_links
+    width: 390px
+    margin: 0 auto
+    &_main
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        color: #070716
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+      a
+        color: #999999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+    &_lang
+      display: block
+      margin: 0 auto
+      color: #1fbad6
+      font-size: 11px
+      font-weight: 400
+      margin-top: 19px
+      text-transform: uppercase
+      text-align: center
+
+  &_mobile
