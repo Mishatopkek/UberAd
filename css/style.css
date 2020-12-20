@@ -185,7 +185,7 @@ nav {
 .reasons_block {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 35px;
 }
 .reasons_round {
@@ -212,6 +212,7 @@ nav {
   font-size: 15px;
   font-weight: 300;
   line-height: 21px;
+  text-align: justify;
 }
 
 .mobile {
@@ -491,12 +492,37 @@ footer a:hover {
   .promo_header {
     font-size: 50px;
   }
-
-  .reasons_block {
-    align-items: flex-start;
+  .promo_subheader {
+    font-size: 33px;
   }
+
   .reasons_descr {
     width: 300px;
+  }
+
+  .mobile_item {
+    width: 300px;
+  }
+
+  .footer_wrapper > div {
+    width: 50%;
+  }
+  .footer_wrapper > div:nth-child(1) {
+    width: 25%;
+  }
+  .footer_wrapper > div:nth-child(3) {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer_mobile {
+    display: flex;
+  }
+  .footer_mobile a {
+    margin: 0 3px;
+  }
+  .footer_mobile a img {
+    width: 100%;
   }
 }
 @media (max-width: 991px) {
@@ -526,7 +552,7 @@ footer a:hover {
     font-size: 40px;
   }
   .promo_subheader {
-    font-size: 30px;
+    font-size: 29px;
   }
 
   .reasons_block {
@@ -540,9 +566,33 @@ footer a:hover {
   .reasons_round {
     margin-right: 0;
   }
-  .reasons_descr {
-    width: 300px;
-    margin-top: 20px;
+  .reasons_subtitle {
+    text-align: center;
+  }
+  .reasons_text {
+    text-align: justify;
+  }
+
+  .mobile .subtitle {
+    font-size: 21px;
+  }
+  .mobile_item {
+    margin-bottom: 30px;
+  }
+
+  .choice_car {
+    width: 100%;
+  }
+
+  .require_list li {
+    line-height: 20px;
+  }
+
+  .footer_mobile {
+    flex-direction: column;
+  }
+  .footer_mobile a {
+    padding: 2px;
   }
 }
 @media (max-width: 767px) {
@@ -628,8 +678,8 @@ footer a:hover {
   .promo_header {
     line-height: 45px;
   }
-  .promo_subheader {
-    font-size: 30px;
+  .promo_descr {
+    display: none;
   }
 }
 @media (max-width: 575px) {

@@ -7,11 +7,30 @@
   .promo
     &_header
       font-size: 50px
+    &_subheader
+      font-size: 33px
   .reasons
-    &_block
-      align-items: flex-start
     &_descr
       width: 300px
+  .mobile
+    &_item
+      width: 300px
+  .footer
+    &_wrapper > div
+      width: 50%
+      &:nth-child(1)
+        width: 25%
+      &:nth-child(3)
+        width: 25%
+        display: flex
+        justify-content: flex-end
+    &_mobile
+      display: flex
+      a
+        margin: 0 3px
+        img
+          width: 100%
+
 @media (max-width: 991px)
   .menu
     &_item
@@ -34,7 +53,7 @@
     &_header
       font-size: 40px
     &_subheader
-      font-size: 30px
+      font-size: 29px
   .reasons
     &_block
       flex-direction: column
@@ -44,9 +63,28 @@
       margin-top: 20px
     &_round
       margin-right: 0
-    &_descr
-      width: 300px
-      margin-top: 20px
+    &_subtitle
+      text-align: center
+    &_text
+      text-align: justify
+  .mobile
+    .subtitle
+      font-size: 21px
+    &_item
+      margin-bottom: 30px
+  .choice
+    &_car
+      width: 100%
+  .require
+    &_list
+      li
+        line-height: 20px
+  .footer
+    &_mobile
+      flex-direction: column
+      a
+        padding: 2px
+
 @media (max-width: 767px)
   .menu
     position: fixed
@@ -113,8 +151,8 @@
   .promo
     &_header
       line-height: 45px
-    &_subheader
-      font-size: 30px
+    &_descr
+      display: none
 @media (max-width: 575px)
   nav
     height: 30px
