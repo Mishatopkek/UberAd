@@ -406,7 +406,7 @@ footer a:hover {
 .footer_divider {
   width: 299px;
   height: 4px;
-  background-color: #1fbad6;
+  background-color: #1eacc7;
   margin: 0 auto;
 }
 .footer_wrapper {
@@ -468,11 +468,10 @@ footer a:hover {
 }
 .footer_links_lang {
   display: block;
-  margin: 0 auto;
-  color: #1fbad6;
+  color: #1eacc7;
   font-size: 11px;
   font-weight: 400;
-  margin-top: 19px;
+  margin: 19px auto 0;
   text-transform: uppercase;
   text-align: center;
 }
@@ -680,6 +679,44 @@ footer a:hover {
   }
   .promo_descr {
     display: none;
+  }
+
+  .world {
+    min-height: 500px;
+  }
+
+  .footer_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_wrapper div:nth-child(1) {
+    order: 2;
+  }
+  .footer_wrapper div:nth-child(2) {
+    order: 1;
+  }
+  .footer_wrapper div:nth-child(3) {
+    order: 3;
+  }
+  .footer_wrapper > div {
+    width: 100%;
+  }
+  .footer_wrapper > div:nth-child(1) {
+    width: 30%;
+  }
+  .footer_wrapper > div:nth-child(3) {
+    width: 20%;
+    justify-content: center;
+  }
+  .footer_social {
+    padding-top: 20px;
+  }
+  .footer_mobile {
+    padding-top: 20px;
+    flex-direction: row;
+  }
+  .footer_mobile a img {
+    width: 100px;
   }
 }
 @media (max-width: 575px) {

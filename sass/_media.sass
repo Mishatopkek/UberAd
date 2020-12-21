@@ -153,6 +153,34 @@
       line-height: 45px
     &_descr
       display: none
+  .world
+    min-height: 500px
+  .footer
+    &_wrapper
+      flex-direction: column
+      align-items: center
+      div
+        &:nth-child(1)
+          order: 2
+        &:nth-child(2)
+          order: 1
+        &:nth-child(3)
+          order: 3
+    &_wrapper > div
+      width: 100%
+      &:nth-child(1)
+        width: 30%
+      &:nth-child(3)
+        width: 20%
+        justify-content: center
+    &_social
+      padding-top: 20px
+    &_mobile
+      padding-top: 20px
+      flex-direction: row
+      a
+        img
+          width: 100px
 @media (max-width: 575px)
   nav
     height: 30px
