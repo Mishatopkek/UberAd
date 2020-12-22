@@ -802,6 +802,80 @@ footer a:hover {
     margin-top: 15px;
     line-height: 16px;
   }
+
+  .mobile {
+    padding: 36px 0 48px;
+  }
+  .mobile .subtitle {
+    font-size: 17px;
+  }
+
+  .choice {
+    min-height: 320px;
+    padding: 25px 0 33px;
+    background: #070716;
+  }
+  .choice .title, .choice .subtitle {
+    display: none;
+  }
+  .choice_car {
+    margin: 35px auto;
+  }
+  .choice_descr {
+    color: #ffffff;
+  }
+
+  .require {
+    padding: 25px 0 26px;
+  }
+  .require_title {
+    font-size: 16px;
+  }
+  .require_block {
+    margin: 22px 0 15px;
+  }
+  .require_list {
+    margin-top: 6px;
+    padding-left: 32px;
+  }
+  .require_list li {
+    font-size: 14px;
+  }
+
+  .world {
+    padding: 25px 0;
+    min-height: 360px;
+  }
+  .world .subtitle {
+    margin-top: 10px;
+  }
+  .world a {
+    width: 100%;
+    bottom: 30px;
+  }
+}
+footer {
+  padding: 25px 0 20px;
+}
+
+.footer_divider {
+  width: 253px;
+  height: 4px;
+}
+.footer_links {
+  width: 290px;
+}
+.footer_links_main {
+  padding: 0;
+}
+.footer_links_main a {
+  font-size: 14px;
+}
+.footer_links_sub {
+  flex-wrap: wrap;
+}
+.footer_links_sub a {
+  margin: 0 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
