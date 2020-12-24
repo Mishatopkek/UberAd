@@ -858,6 +858,9 @@ footer {
   padding: 25px 0 20px;
 }
 
+.footer_wrapper {
+  padding-top: 22px;
+}
 .footer_divider {
   width: 253px;
   height: 4px;
@@ -867,15 +870,14 @@ footer {
 }
 .footer_links_main {
   padding: 0;
-}
-.footer_links_main a {
   font-size: 14px;
 }
 .footer_links_sub {
   flex-wrap: wrap;
+  justify-content: center;
 }
 .footer_links_sub a {
-  margin: 0 7px;
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
