@@ -861,6 +861,9 @@ footer {
 .footer_wrapper {
   padding-top: 22px;
 }
+.footer_wrapper > div:nth-child(1) {
+  width: 50%;
+}
 .footer_divider {
   width: 253px;
   height: 4px;
