@@ -882,5 +882,8 @@ footer {
 .footer_links_sub a {
   margin: 0 5px;
 }
+.footer_mobile a img {
+  width: 95px;
+}
 
 /*# sourceMappingURL=style.css.map */
