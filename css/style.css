@@ -778,6 +778,14 @@ footer a:hover {
   .menu {
     width: 85%;
   }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .menu_link {
+    display: block;
+  }
 
   .reasons {
     padding: 22px 0 36px;
